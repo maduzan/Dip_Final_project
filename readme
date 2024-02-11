@@ -1,0 +1,61 @@
+ <div class="container mx-auto mt-10 text-center ">
+        <div id="popu" class="overlay">
+            <div class="popup">
+                <button class="relative ml-[323px] -mt-[27px] p-4 text-gray-500" onclick="togglePopupporder()">
+                    <!-- SVG close icon -->
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <!-- Your registration form goes here -->
+                <h2 class="text-2xl font-bold mb-4">Details</h2><br>
+                <form class="">
+                    <!-- Your form fields go here -->
+                    <div class="mb-2">
+                        <p class="font-bold p-5">You can Pick youur Employee Within One Minute Please choose below informations</p>
+                    </div>
+                    <div class="mb-4">
+                        <label id="currentDateTimeLabel" class="text-l bg-white rounded shadow-md"></label>
+                    </div><br>
+                    <div class="max-w bg-white rounded-md shadow-md">
+                        <label for="district" class="block text-sm font-medium text-gray-700">Select District:</label>
+                        <select id="district" name="district" class="mt-1 p-2 border rounded-md w-full">
+                            <!-- Add option elements for each district -->
+                            <option value="colombo">Colombo</option>
+                            <option value="gampaha">Gampaha</option>
+                            <option value="kandy">Kandy</option>
+                            <!-- Add more options for other districts as needed -->
+                        </select>
+                    </div><br>
+                    <button type="button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded"><a href="Order.php">Order Your Employee</a></button>
+                </form>
+                <!-- Close button -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container mx-auto mt-10 text-center  ">
+
+        <div id="popup" class="overlay">
+            <div class="popup">
+                <button class="relative ml-[323px] -mt-[27px] p-4 text-gray-500" onclick="togglePopup()">
+                    <!-- SVG close icon -->
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <p class="bg-green-200 text-green-800 border-l-4 border-green-500 p-4 rounded-md shadow-md">YOUR ORDER IS CONFIRMED AND EMPLOYEE WILL ARRIVE AT YOUR DOOR WITHIN 30 MINUTES</p><br><br>
+                <div class="countdown-container justify-items-center">
+                    <p id="countdown" class="text-xl font-bold"></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
